@@ -1,11 +1,16 @@
+import { Routes, Route } from "react-router-dom";
+import { Home, Details } from "./pages";
+import Wrapper from "./hooks/Wrapper";
+
 const App = () => {
+  const HomeComponent = Wrapper(Home);
+  const DetailsComponent = Wrapper(Details);
 
   return (
-    <>
-    <h1 className="text-3xl text-center font-bold underline">
-      Hello world!
-    </h1>
-    </>
+    <Routes>
+      <Route path="/" element={<HomeComponent />} />
+      <Route path="/details/:id" element={<DetailsComponent/>} />
+    </Routes>
   )
 }
 
