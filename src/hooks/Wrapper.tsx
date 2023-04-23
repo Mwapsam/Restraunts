@@ -12,4 +12,4 @@ const Wrapper = (Component: FC )=> (props: Props) => {
   )
 }
 
-export default Wrapper
+export default Wrapper;
