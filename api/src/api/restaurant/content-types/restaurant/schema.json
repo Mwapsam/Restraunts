@@ -24,15 +24,7 @@
       "target": "api::rating.rating"
     },
     "image": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "type": "string"
     }
   }
 }
