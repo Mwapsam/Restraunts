@@ -5,7 +5,7 @@ import { AppDispatch, RootState } from "../store/store";
 import fetchRestaurants from '../services/restaurants.service';
 
 const Home = () => {
-  const { restaurants } = useSelector((state: RootState) => state.restuarants );
+  const { restaurants, loading } = useSelector((state: RootState) => state.restuarants );
   const dispatch = useDispatch<AppDispatch>();
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const Home = () => {
     <>
         <Hero />
         <div className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4">
-            <Restaurants restaurants={restaurants} />
+            <Restaurants restaurants={restaurants} loading={loading} />
         </div>
     </>
   )

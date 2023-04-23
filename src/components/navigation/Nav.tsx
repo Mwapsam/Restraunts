@@ -64,7 +64,7 @@ const Nav = () => {
             <span className="text-2xl font-extrabold">Restraunts</span>
           </Typography>
           <div className="hidden lg:block">{navList}</div>
-          <Button variant="gradient" size="sm" className="hidden lg:inline-block">
+          <Button variant="gradient" color="green" size="sm" className="hidden lg:inline-block">
             <span>Sign Up</span>
           </Button>
           <IconButton
@@ -108,7 +108,7 @@ const Nav = () => {
         <MobileNav open={openNav}>
           <div className="container mx-auto">
             {navList}
-            <Button variant="gradient" size="sm" fullWidth className="mb-2">
+            <Button variant="gradient" color="green" size="sm" fullWidth className="mb-2">
               <span>Sign Up</span>
             </Button>
           </div>

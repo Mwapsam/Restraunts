@@ -23,10 +23,9 @@ const Hero = () => {
         <CardBody className="relative py-8 px-6 m-8 md:px-12 backdrop-blur-md">
             <Typography
                 variant="h2"
-                color="white"
-                className="mb-6 font-medium leading-[1.5] capitalize"
+                className="mb-6 font-bold leading-[1.5] capitalize text-green-400"
             >
-                The most beautiful restraunts in town. enjoy!
+                The most beautiful restaurants in town. enjoy!
             </Typography>
             <Typography variant="h5" className="mb-4 text-gray-400">
                 2023 Lusaka
