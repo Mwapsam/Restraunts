@@ -8,6 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+api/node_modules
 dist
 dist-ssr
 *.local
@@ -22,3 +23,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+api/.env
+api/license.txt
+api/exports
+api/*.cache
+api/dist
+api/build
+api/.strapi-updater.json
