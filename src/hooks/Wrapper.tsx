@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Nav } from '../components';
+import { Nav, Footer } from '../components';
 
 type Props = object
 
@@ -8,6 +8,7 @@ const Wrapper = (Component: FC )=> (props: Props) => {
     <>
         <Nav />
         <Component {...props} />
+        <Footer />
     </>
   )
 }

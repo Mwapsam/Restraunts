@@ -17,6 +17,12 @@
     },
     "rating": {
       "type": "string"
+    },
+    "restaurant_id": {
+      "type": "integer"
+    },
+    "user_id": {
+      "type": "integer"
     }
   }
 }

@@ -9,12 +9,15 @@ type Props = {
 }
 
 const Restaurants = ({restaurants, loading}: Props) => {
-    console.log(restaurants);
     
   return (
     <>
         {loading === 'pending' ? <Spinner />
-        : (<Card className="w-full mt-10">
+        : (<Card shadow={false} style={{borderRadius: 0}} className="w-full mt-10">
+            <div className="text-center pb-4">
+                <h2 className="font-bold text-xl p-3">Restaurants</h2>
+                <div className="border-b-2 border-gray-400 w-24 mx-auto"></div>
+            </div>
             <div className="mx-auto grid  grid-cols-1 gap-6 p-6 sm:grid-cols-1 md:grid-cols-4">
                 {restaurants && restaurants.map((rest) => (
                     <Link key={rest.id} to={`/details/${rest.id}`}>
