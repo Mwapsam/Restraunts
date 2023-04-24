@@ -1,8 +1,10 @@
 export interface Restaurant {
-    attributes: {
-        name: string;
-        address: string;
-        image: string;
-    };
+    attributes: Attributes;
     id: number;
+}
+
+export interface Attributes {
+    name: string;
+    address: string;
+    image: string;
 }
