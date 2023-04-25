@@ -23,8 +23,9 @@ const restaurantSlice = createSlice({
             state.loading = 'pending'
         });
 
-        builder.addCase(fetchRestaurants.rejected, (state) => {
+        builder.addCase(fetchRestaurants.rejected, (state, action) => {
             state.loading = 'failed';
+            state.error = action.error.message;            
         });
 
         builder.addCase(fetchRestaurants.fulfilled, (state, action) => {

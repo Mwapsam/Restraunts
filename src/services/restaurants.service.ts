@@ -7,7 +7,9 @@ const fetchRestaurants = createAsyncThunk("restaurants/fetch", async () => {
       const data = await res.data.data;      
       return data;
     } catch (e: any) {
-       throw new Error(e.response.error.message);
+      console.log(e);
+      
+       throw new Error(e.response.data.error.message);
     }
   });
   

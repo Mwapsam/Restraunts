@@ -5,7 +5,7 @@ import Spinner from "./Spinner";
 
 type Props = {
     restaurants: Restaurant[];
-    loading: 'idle' | 'pending' | 'succeeded' | 'failed'
+    loading: 'idle' | 'pending' | 'succeeded' | 'failed';
 }
 
 const Restaurants = ({restaurants, loading}: Props) => {
