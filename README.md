@@ -13,6 +13,25 @@ Enter the following commands in your terminal;
 
 `yarn run develop`
 
+## Architecture
+  - restaurants:
+      - name (string)
+      - address (string)
+      - image (string)
+      - rating (foreign key)
+      - id (primary key)
+      
+  - ratings:
+      - description (string)
+      - rating (string)
+      - restaurant_id (integer)
+      - user_id (integer)
+      
+  - users: 
+      - username (string)
+      - email (string)
+      - password (string)
+     
 
 ## Features
 - Displays a grid of restaurants on the home page
