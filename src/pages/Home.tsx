@@ -5,12 +5,12 @@ import { AppDispatch, RootState } from "../store/store";
 import fetchRestaurants from '../services/restaurants.service';
 
 const Home = () => {
-  const { restaurants, loading } = useSelector((state: RootState) => state.restuarants );
+  const { restaurants, loading } = useSelector((state: RootState) => state.restuarants || {});
   const dispatch = useDispatch<AppDispatch>();
 
   useEffect(() => {
     dispatch(fetchRestaurants())
-  }, [dispatch, restaurants.length])
+  }, [dispatch, restaurants?.length])
 
   return (
     <>

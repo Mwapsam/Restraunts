@@ -1,5 +1,5 @@
 import { Typography } from "@material-tailwind/react";
-
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,46 +9,38 @@ const Footer = () => {
                 &copy; 2023 Mwapsam
             </Typography>
             <ul className="flex flex-wrap items-center gap-y-2 gap-6 lg:gap-x-8 lg:mx-12">
-            <li>
-                <Typography
-                as="a"
-                href="#"
-                color="blue-gray"
-                className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
-                >
-                About Us
-                </Typography>
-            </li>
-            <li>
-                <Typography
-                as="a"
-                href="#"
-                color="blue-gray"
-                className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
-                >
-                License
-                </Typography>
-            </li>
-            <li>
-                <Typography
-                as="a"
-                href="#"
-                color="blue-gray"
-                className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
-                >
-                Contribute
-                </Typography>
-            </li>
-            <li>
-                <Typography
-                as="a"
-                href="#"
-                color="blue-gray"
-                className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
-                >
-                Contact Us
-                </Typography>
-            </li>
+                <li>
+                    <Link
+                        to='/coming-soon'
+                        className="font-normal transition-colors hover:text-green-500 focus:text-green-500"
+                    >
+                        About Us
+                    </Link>
+                </li>
+                <li>
+                    <Link 
+                        to='/coming-soon'
+                        className="font-normal transition-colors hover:text-green-500 focus:text-green-500"
+                    >
+                        License
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        to='/coming-soon'
+                        className="font-normal transition-colors hover:text-green-500 focus:text-green-500"
+                    >
+                        Contribute
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        to='/coming-soon'
+                        className="font-normal transition-colors hover:text-green-500 focus:text-green-500"
+                    >
+                        Contact Us
+                    </Link>
+                </li>
             </ul>
         </div>
 

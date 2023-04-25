@@ -24,7 +24,9 @@ const Detail = ({restaurant, rating, users}: Props) => {
         <CardBody>
           <div className="mb-3 flex items-center justify-between">
             <Typography variant="h5" color="blue-gray" className="font-medium">
-              {restaurant?.attributes.name}
+                <span>
+                  {restaurant?.attributes.name}
+                </span>
             </Typography>
             <Typography
               color="blue-gray"
@@ -35,7 +37,9 @@ const Detail = ({restaurant, rating, users}: Props) => {
           </div>
             <div className="p-3 shadow-sm">
               <Typography color="gray">
-                {restaurant?.attributes.address}
+                <span>
+                  {restaurant?.attributes.address}
+                </span>
               </Typography>
             </div>
         </CardBody>

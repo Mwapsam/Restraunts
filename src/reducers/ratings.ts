@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import fetchRatings from '../services/ratings.service';
 import { Ratings } from '../types';
 
-type SliceState = { 
+export type SliceState = { 
     rating: Ratings[]
     loading: 'idle' | 'pending' | 'succeeded' | 'failed'
     error: string | undefined
