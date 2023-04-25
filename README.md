@@ -2,7 +2,8 @@
 This is a simple React.js app that displays a grid of restaurants and allows users to navigate into each restaurant to see its ratings. The app is built using the Strapi headless CMS to manage restaurant and rating data.
 
 ## Demo Video
-[Video Link](https://www.loom.com/share/49bc4f457cb442168854e20b7bc021e4)
+[Video Link](https://www.loom.com/share/ecd6bef4c28b4def81a1b02dc0a19356)
+
 
 
 ## Getting Started
