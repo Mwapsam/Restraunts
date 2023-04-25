@@ -4,6 +4,16 @@ This is a simple React.js app that displays a grid of restaurants and allows use
 ## Getting Started
 To get started, clone this repository and install the necessary dependencies using `npm install`. You will also need to set up a Strapi instance and create two content types: Restaurant and Rating, with the appropriate fields. Once you have created and populated your Strapi instance with data, you can start the app using `npm run dev`.
 
+## To Run an API
+Enter the following commands in your terminal;
+
+`cd api`
+
+`yarn install`
+
+`yarn run develop`
+
+
 ## Features
 - Displays a grid of restaurants on the home page
 - Allows users to click on a restaurant to navigate into its details page
@@ -28,4 +38,4 @@ To test the code open your terminal and change directory to the root folder of t
 Contributions are welcome! To contribute, fork this repository and submit a pull request with your changes.
 
 ### License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+This project is licensed under the MIT License.
